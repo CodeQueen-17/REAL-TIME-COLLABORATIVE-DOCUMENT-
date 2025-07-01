@@ -1,0 +1,106 @@
+/* Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #667eea, #764ba2);
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+/* Glass Container */
+.editor-glass {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.2);
+  padding: 2rem;
+  width: 90%;
+  max-width: 850px;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.toolbar button {
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.toolbar button:hover {
+  background-color: #22d3ee;
+  color: black;
+}
+
+/* Editor Area */
+#editor {
+  background: rgba(255,255,255,0.15);
+  min-height: 250px;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  overflow-y: auto;
+  line-height: 1.6;
+}
+
+/* Action Buttons */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.actions button {
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  transition: background 0.3s;
+}
+
+.actions button:nth-child(1) {
+  background-color: #22c55e;
+}
+
+.actions button:nth-child(2) {
+  background-color: #3b82f6;
+}
+
+.actions button:nth-child(3) {
+  background-color: #ef4444;
+}
+
+.actions button:hover {
+  opacity: 0.9;
+}

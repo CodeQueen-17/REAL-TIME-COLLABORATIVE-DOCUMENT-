@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Collaborative Editor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="editor-glass">
+    <h1><i class="fas fa-pen-nib"></i> Real-Time Document Editor</h1>
+
+    <div class="toolbar">
+      <button onclick="execCmd('bold')" title="Bold"><i class="fas fa-bold"></i></button>
+      <button onclick="execCmd('italic')" title="Italic"><i class="fas fa-italic"></i></button>
+      <button onclick="execCmd('underline')" title="Underline"><i class="fas fa-underline"></i></button>
+      <button onclick="execCmd('insertOrderedList')" title="Numbered List"><i class="fas fa-list-ol"></i></button>
+      <button onclick="execCmd('insertUnorderedList')" title="Bullet List"><i class="fas fa-list-ul"></i></button>
+      <button onclick="execCmd('createLink')" title="Insert Link"><i class="fas fa-link"></i></button>
+      <button onclick="execCmd('removeFormat')" title="Clear Formatting"><i class="fas fa-eraser"></i></button>
+    </div>
+
+    <div id="editor" contenteditable="true" spellcheck="true">
+      Start writing your content here...
+    </div>
+
+    <div class="actions">
+      <button onclick="saveDoc()"><i class="fas fa-save"></i> Save</button>
+      <button onclick="loadDoc()"><i class="fas fa-folder-open"></i> Load</button>
+      <button onclick="clearDoc()"><i class="fas fa-trash"></i> Clear</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
